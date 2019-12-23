@@ -1,0 +1,43 @@
+body {
+  background: #000;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.placeholder {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000;
+  display: inline-block;
+}
+.dropped {
+  border: 5px dotted blue;
+}
+.draggable-source {
+  margin: 10px;
+  touch-action: none;
+  user-select: none;
+  display: inline-block;
+  z-index: 2;
+  position: relative;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* animation-name: pulse;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+animation-fill-mode: both; */
